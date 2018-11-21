@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="playlist"
+    android:id="@+id/fragment_playlist"
+    android:background="@color/white"
+    tools:mContext="org.oucho.musicplayer.fragments.PlaylistContentFragment"
+    tools:ignore="Overdraw">
+
+    <org.oucho.musicplayer.view.DragRecyclerView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="@dimen/barre_lecture"
+        app:bubbleColor="@color/noirTransparent"
+        app:bubbleTextColor="@color/colorAccent"
+        app:handleColor="@color/colorAccent"
+        app:hideScrollbar="true" />
+
+</RelativeLayout>

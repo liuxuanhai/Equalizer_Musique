@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Musique</string>
+
+    <string name="app_full_name" translatable="false">Music player for android</string>
+
+    <string name="by" tools:ignore="MissingTranslation" translatable="false">Old Geek, 2018</string>
+
+    <string name="licence_info" translatable="false">
+        Ce logiciel est destiné à ma famille et mes amis uniquement.\n
+        Code source sur demande.\n
+        \n
+    </string>
+
+
+
+</resources>

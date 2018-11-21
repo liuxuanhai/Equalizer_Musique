@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <org.oucho.musicplayer.view.SeekArc
+        android:id="@+id/seekArc"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        seekarc:arcColor="@color/grey_300"
+        seekarc:clockwise="true"
+        seekarc:max="120"
+        seekarc:progressColor0="@color/colorAccent"
+        seekarc:rotation="0"
+        seekarc:sweepAngle="360"
+        seekarc:thumb="@drawable/seek_arc_control_selector"
+        seekarc:touchInside="true"
+        seekarc:arcWidth="4dp"
+        seekarc:progressWidth="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:layout_gravity="center"
+        android:text="ZZzzz..."
+        android:textColor="@color/blue_900_trans"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/seekArcProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+</FrameLayout>

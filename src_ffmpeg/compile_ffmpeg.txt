@@ -1,0 +1,243 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!! on Mac OS ndk 16 = bug, use ndk 15 !!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+------------------------------------      x86      -------------------------------------
+
+export ANDROID_ROOT=$ANDROID_NDK/platforms/android-21/arch-x86
+export ANDROID_BIN=$ANDROID_NDK/toolchains/x86-4.9/prebuilt/darwin-x86_64/bin
+
+export CFLAGS="-DANDROID -march=i686 -pipe"
+export CXXFLAGS=$CFLAGS
+export CC="i686-linux-android-gcc --sysroot=$ANDROID_ROOT"
+export CXX="i686-linux-android-g++ --sysroot=$ANDROID_ROOT"
+
+export PATH=$ANDROID_BIN:$PATH
+
+
+
+------------------------------------- lame 2.13.01 -------------------------------------
+
+./configure --host=i686-linux-android  --with-sysroot="$ANDROID_ROOT"  --enable-static \
+ --prefix=/Users/icare/AndroidStudio/BIN/x86/ffmpeg-3.4/android --enable-nasm
+
+make -j4
+make install
+
+
+-------------------------------------- ffmpeg 3.4 --------------------------------------
+
+./configure --arch=i686 --target-os=linux --enable-runtime-cpudetect --disable-shared \
+--enable-static --cross-prefix=$ANDROID_BIN/i686-linux-android- --sysroot="$ANDROID_ROOT" \
+--extra-cflags="-Iandroid/include" \
+--extra-ldflags="-static -fPIE -Landroid/lib" \
+--disable-ffplay --disable-ffprobe --disable-ffserver \
+--disable-doc \
+--disable-cuda --disable-nvenc --disable-v4l2_m2m --disable-cuvid --disable-hwaccels \
+--disable-avdevice --disable-encoders --disable-decoders --disable-protocols --disable-filters \
+--disable-parsers --disable-demuxers --disable-muxers --disable-bsfs --disable-network \
+--enable-static --disable-shared --disable-debug \
+--enable-gpl --enable-version3 \
+--enable-libmp3lame \
+--enable-decoder=aac \
+--enable-decoder=alac \
+--enable-decoder=mp3 \
+--enable-decoder=flac \
+--enable-decoder=vorbis \
+--enable-decoder=pcm_s16le --enable-decoder=pcm_s16be \
+--enable-decoder=pcm_s24le --enable-decoder=pcm_s24be \
+--enable-decoder=pcm_s32le --enable-decoder=pcm_s32be \
+--enable-decoder=pcm_u16le --enable-decoder=pcm_u16be \
+--enable-decoder=pcm_u24le --enable-decoder=pcm_u24be \
+--enable-decoder=pcm_u32le --enable-decoder=pcm_u32be \
+--enable-decoder=pcm_f16le --enable-decoder=pcm_f24le \
+--enable-decoder=pcm_f32le --enable-decoder=pcm_f32be \
+--enable-decoder=pcm_f64le --enable-decoder=pcm_f64be \
+--enable-encoder=aac \
+--enable-encoder=flac \
+--enable-encoder=libmp3lame \
+--enable-filter=aresample \
+--enable-parser=aac --enable-parser=flac --enable-parser=mpegaudio --enable-parser=vorbis \
+--enable-parser=mpeg4video \
+--enable-demuxer=aac --enable-demuxer=data --enable-demuxer=flac --enable-demuxer=mp3 \
+--enable-demuxer=concat --enable-demuxer=data --enable-demuxer=mjpeg --enable-demuxer=yuv4mpegpipe \
+--enable-demuxer=mov \
+--enable-demuxer=pcm_s16le --enable-demuxer=pcm_s16be \
+--enable-demuxer=pcm_s24le --enable-demuxer=pcm_s24be \
+--enable-demuxer=pcm_s32le --enable-demuxer=pcm_s32be \
+--enable-demuxer=pcm_u16le --enable-demuxer=pcm_u16be \
+--enable-demuxer=pcm_u24le --enable-demuxer=pcm_u24be \
+--enable-demuxer=pcm_u32le --enable-demuxer=pcm_u32be \
+--enable-demuxer=pcm_f32le --enable-demuxer=pcm_f32be \
+--enable-demuxer=pcm_f64le --enable-demuxer=pcm_f64be \
+--enable-demuxer=wav \
+--enable-muxer=data --enable-muxer=flac --enable-muxer=mjpeg --enable-muxer=mp3 --enable-muxer=ipod \
+--enable-protocol=file
+
+make -j4
+
+
+########################################################################################
+-----------------------    x86_64 Zenfone 2 (550ml, 551ml)    --------------------------
+
+export ANDROID_ROOT=$ANDROID_NDK/platforms/android-21/arch-x86_64
+export ANDROID_BIN=$ANDROID_NDK/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/bin
+
+export CFLAGS="-DANDROID -O3 -march=silvermont -pipe"
+export CXXFLAGS=$CFLAGS
+export CC="x86_64-linux-android-gcc --sysroot=$ANDROID_ROOT"
+export CXX="x86_64-linux-android-g++ --sysroot=$ANDROID_ROOT"
+
+export PATH=$ANDROID_BIN:$PATH
+
+------------------------------------- lame 2.13.01 -------------------------------------
+
+./configure --host=x86_64-linux-android  --with-sysroot="$ANDROID_ROOT"  --enable-static \
+ --prefix=/Users/icare/AndroidStudio/BIN/x86_64/ffmpeg-3.4/android --enable-nasm
+
+make -j4
+make install
+
+
+-------------------------------------- ffmpeg 3.4 --------------------------------------
+
+./configure --arch=x86_64 --target-os=linux --enable-runtime-cpudetect --disable-shared \
+--enable-static --cross-prefix=$ANDROID_BIN/x86_64-linux-android- --sysroot="$ANDROID_ROOT" \
+--extra-cflags="-Iandroid/include" \
+--extra-ldflags="-static -fPIE -Landroid/lib" \
+--disable-ffplay --disable-ffprobe --disable-ffserver \
+--disable-doc \
+--disable-cuda --disable-nvenc --disable-v4l2_m2m --disable-cuvid --disable-hwaccels \
+--disable-avdevice --disable-encoders --disable-decoders --disable-protocols --disable-filters \
+--disable-parsers --disable-demuxers --disable-muxers --disable-bsfs --disable-network \
+--enable-static --disable-shared --disable-debug \
+--enable-gpl --enable-version3 \
+--enable-libmp3lame \
+--enable-decoder=aac \
+--enable-decoder=alac \
+--enable-decoder=mp3 \
+--enable-decoder=flac \
+--enable-decoder=vorbis \
+--enable-decoder=pcm_s16le --enable-decoder=pcm_s16be \
+--enable-decoder=pcm_s24le --enable-decoder=pcm_s24be \
+--enable-decoder=pcm_s32le --enable-decoder=pcm_s32be \
+--enable-decoder=pcm_u16le --enable-decoder=pcm_u16be \
+--enable-decoder=pcm_u24le --enable-decoder=pcm_u24be \
+--enable-decoder=pcm_u32le --enable-decoder=pcm_u32be \
+--enable-decoder=pcm_f16le --enable-decoder=pcm_f24le \
+--enable-decoder=pcm_f32le --enable-decoder=pcm_f32be \
+--enable-decoder=pcm_f64le --enable-decoder=pcm_f64be \
+--enable-encoder=aac \
+--enable-encoder=flac \
+--enable-encoder=libmp3lame \
+--enable-filter=aresample \
+--enable-parser=aac --enable-parser=flac --enable-parser=mpegaudio --enable-parser=vorbis \
+--enable-parser=mpeg4video \
+--enable-demuxer=aac --enable-demuxer=data --enable-demuxer=flac --enable-demuxer=mp3 \
+--enable-demuxer=concat --enable-demuxer=data --enable-demuxer=mjpeg --enable-demuxer=yuv4mpegpipe \
+--enable-demuxer=mov \
+--enable-demuxer=pcm_s16le --enable-demuxer=pcm_s16be \
+--enable-demuxer=pcm_s24le --enable-demuxer=pcm_s24be \
+--enable-demuxer=pcm_s32le --enable-demuxer=pcm_s32be \
+--enable-demuxer=pcm_u16le --enable-demuxer=pcm_u16be \
+--enable-demuxer=pcm_u24le --enable-demuxer=pcm_u24be \
+--enable-demuxer=pcm_u32le --enable-demuxer=pcm_u32be \
+--enable-demuxer=pcm_f32le --enable-demuxer=pcm_f32be \
+--enable-demuxer=pcm_f64le --enable-demuxer=pcm_f64be \
+--enable-demuxer=wav \
+--enable-muxer=data --enable-muxer=flac --enable-muxer=mjpeg --enable-muxer=mp3 --enable-muxer=ipod \
+--enable-protocol=file
+
+make -j4
+
+########################################################################################
+------------------------------------      arm      -------------------------------------
+
+export ANDROID_ROOT=$ANDROID_NDK/platforms/android-21/arch-arm
+export ANDROID_BIN=$ANDROID_NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin
+
+export CFLAGS="-DANDROID -march=armv7-a -mfpu=neon"
+export CXXFLAGS=$CFLAGS
+export CC="arm-linux-androideabi-gcc --sysroot=$ANDROID_ROOT"
+export CXX="arm-linux-androideabi-g++ --sysroot=$ANDROID_ROOT"
+
+export PATH=$ANDROID_BIN:$PATH
+
+
+
+-------------------------------------- lame 3.100 --------------------------------------
+
+./configure --host=arm-linux-androideabi  --with-sysroot="$ANDROID_ROOT" --enable-static \
+ --enable-shared --prefix=/Users/icare/AndroidStudio/BIN/arm/ffmpeg-3.4/android/
+
+make -j4
+make install
+
+
+-------------------------------------- ffmpeg 3.4 --------------------------------------
+
+./configure --arch=arm --target-os=linux --enable-runtime-cpudetect --disable-shared \
+--enable-static --cross-prefix=$ANDROID_BIN/arm-linux-androideabi- --sysroot="$ANDROID_ROOT" \
+--extra-cflags="-Iandroid/include" \
+--extra-ldflags="-static -fPIE -Landroid/lib" \
+--disable-ffplay --disable-ffprobe --disable-ffserver \
+--disable-doc \
+--disable-cuda --disable-nvenc --disable-v4l2_m2m --disable-cuvid --disable-hwaccels \
+--disable-avdevice --disable-encoders --disable-decoders --disable-protocols --disable-filters \
+--disable-parsers --disable-demuxers --disable-muxers --disable-bsfs --disable-network \
+--enable-static --disable-shared --disable-debug \
+--enable-gpl --enable-version3 \
+--enable-libmp3lame \
+--enable-decoder=aac \
+--enable-decoder=alac \
+--enable-decoder=mp3 \
+--enable-decoder=flac \
+--enable-decoder=vorbis \
+--enable-decoder=pcm_s16le --enable-decoder=pcm_s16be \
+--enable-decoder=pcm_s24le --enable-decoder=pcm_s24be \
+--enable-decoder=pcm_s32le --enable-decoder=pcm_s32be \
+--enable-decoder=pcm_u16le --enable-decoder=pcm_u16be \
+--enable-decoder=pcm_u24le --enable-decoder=pcm_u24be \
+--enable-decoder=pcm_u32le --enable-decoder=pcm_u32be \
+--enable-decoder=pcm_f16le --enable-decoder=pcm_f24le \
+--enable-decoder=pcm_f32le --enable-decoder=pcm_f32be \
+--enable-decoder=pcm_f64le --enable-decoder=pcm_f64be \
+--enable-encoder=aac \
+--enable-encoder=flac \
+--enable-encoder=libmp3lame \
+--enable-filter=aresample \
+--enable-parser=aac --enable-parser=flac --enable-parser=mpegaudio --enable-parser=vorbis \
+--enable-parser=mpeg4video \
+--enable-demuxer=aac --enable-demuxer=data --enable-demuxer=flac --enable-demuxer=mp3 \
+--enable-demuxer=concat --enable-demuxer=data --enable-demuxer=mjpeg --enable-demuxer=yuv4mpegpipe \
+--enable-demuxer=mov \
+--enable-demuxer=pcm_s16le --enable-demuxer=pcm_s16be \
+--enable-demuxer=pcm_s24le --enable-demuxer=pcm_s24be \
+--enable-demuxer=pcm_s32le --enable-demuxer=pcm_s32be \
+--enable-demuxer=pcm_u16le --enable-demuxer=pcm_u16be \
+--enable-demuxer=pcm_u24le --enable-demuxer=pcm_u24be \
+--enable-demuxer=pcm_u32le --enable-demuxer=pcm_u32be \
+--enable-demuxer=pcm_f32le --enable-demuxer=pcm_f32be \
+--enable-demuxer=pcm_f64le --enable-demuxer=pcm_f64be \
+--enable-demuxer=wav \
+--enable-muxer=data --enable-muxer=flac --enable-muxer=mjpeg --enable-muxer=mp3 --enable-muxer=ipod \
+--enable-protocol=file
+
+make -j4
+
+if error
+--------
+// in file libavcodec/aaccoder.c line:803
+
+803 -- int B0 = 0, B1 = 0;
+++ int Ba0 = 0, Ba1 = 0;
+
+865 -- B0 += b1+b2;
+ -- B1 += b3+b4;
+++ Ba0 += b1+b2;
+++ Ba1 += b3+b4;
+
+870 -- cpe->ms_mask[w*16+g] = dist2 <= dist1 && B1 < B0;
+++ cpe->ms_mask[w*16+g] = dist2 <= dist1 && Ba1 < Ba0;
+
+882 -- } else if (B1 > B0) {
+++ -- } else if (Ba1 > Ba0) {

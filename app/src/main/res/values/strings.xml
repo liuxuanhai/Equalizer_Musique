@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <string name="album">Album</string>
+
+    <string name="albums">Albums</string>
+
+    <string name="unknown_album">Album inconnu</string>
+
+    <string name="album_artwork">Album cover</string>
+
+    <string name="default_time">00:00</string>
+
+
+    <string name="titles">Titles</string>
+    <string name="title">Title</string>
+
+    <string name="artist">Artist</string>
+    <string name="artists">Artists</string>
+    <string name="unknown_artist">Unknow artist</string>
+
+    <string name="genre">Genre</string>
+
+    <string name="play">Playback</string>
+    <string name="prev">Previous</string>
+    <string name="next">Next</string>
+
+    <string name="reorder">Reorder</string>
+
+    <string name="custom">Custom</string>
+    <string name="bass_boost">Bass Amplifier</string>
+
+    <string name="playlists">Playlists</string>
+    <string name="choose_playlist">Choose playlist</string>
+    <string name="new_playlist">New playlist</string>
+    <string name="playlist_name">Playlist name</string>
+    <string name="create_playlist">Create playlist</string>
+    <string name="action_add_to_playlist">Add to playlist</string>
+
+    <string name="deletePlaylistConfirm">Delete this playlist?</string>
+
+    <string name="view_queue">See the current playlist</string>
+    <string name="action_add_to_queue">Add to current playlist</string>
+
+
+    <string name="context_menu_description">Context menu</string>
+
+    <string name="equalizer">Equalizer</string>
+    <string name="action_equalizer">Equalizer</string>
+
+    <string name="search">Search</string>
+    <string name="edit_tags">Edit data</string>
+    <string name="tags_edition">Modification in progress</string>
+
+    <string name="year">Year</string>
+
+    <string name="delete">delete</string>
+
+
+    <string name="permission">Permission</string>
+    <string name="permission_read_phone_state">It is recommended (but not necessary) to give permission
+        \"Make and manage phone calls \" to the application,
+        This will allow the player to pause when you receive a call.</string>
+
+    <string name="permission_write_sd_externe">Select the external SD card to allow writing, required from android 5.0 and above.</string>
+
+    <string name="sort_order_entry_az">Alphabetical order</string>
+    <string name="sort_order_entry_year">Year</string>
+    <string name="sort_order_entry_artist">Artist</string>
+    <string name="sort_order_entry_album">Album</string>
+    <string name="sort_order_entry_latest_add">Latest addition</string>
+
+
+    <string name="title_sort_year">year</string>
+    <string name="title_sort_artist">artist</string>
+    <string name="title_sort_album">album</string>
+    <string name="title_sort_add">addition</string>
+
+
+    <string name="about">About</string>
+
+    <string name="exit">Exit</string>
+
+    <!-- Timer -->
+    <string name="timer_info" formatted="false" tools:ignore="StringFormatInvalid">%02d:%02d</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="continuer">Continue</string>
+    <string name="cancel_timer">Cancel the timer</string>
+    <string name="impossible">0 not possible</string>
+
+
+    <string name="minute_singulier">minute</string>
+    <string name="minute_pluriel">minutes</string>
+
+    <string name="arret">Stop in</string>
+
+    <string name="stop_timer">Timer stopped</string>
+
+    <string name="action_sleep_timer">Sleep Timer</string>
+
+    <string name="action_radio">Radio</string>
+
+    <!-- update -->
+    <string name="update">Update</string>
+
+    <string name="appupdater_update_available">New Available Update</string>
+
+    <string name="appupdater_update_available_description_dialog">Update %1$s is available. By downloading this version of the application, you will have access to the latest features and improvements of %2$s.</string>
+
+    <string name="appupdater_update_available_description_dialog_before_release_notes">Update %1$s is available.\n\nNEWS:\n%2$s</string>
+    <string name="appupdater_update_available_description_snackbar">Update %1$s is available.</string>
+    <string name="appupdater_update_not_available">No update available </string>
+    <string name="appupdater_update_not_available_description">You have the latest available version of %s.</string>
+    <string name="appupdater_btn_update">Download</string>
+    <string name="appupdater_btn_dismiss">Later</string>
+
+    <string name="title_activity_plop">Search</string>
+
+    <string name="no_result">no result</string>
+
+    <string name="action_play_album">Play</string>
+
+    <string name="key_internal_uri_extsdcard" translatable="false">key_extsdcard</string>
+
+
+    <string name="internal_storage">Internal Storage</string>
+    <string name="extrnal_storage">External Storage</string>
+
+    <string name="song_tag_track_number">Track n°</string>
+    <string name="disc_number">Disc n°</string>
+
+    <string name="classical">Classical</string>
+    <string name="flat">Flat</string>
+    <string name="stockage_space">Insufficient space to perform this operation</string>
+
+    <string name="convert">Convert</string>
+    <string name="converting">Conversion in progress</string>
+
+    <string name="convert_format">Convert to format</string>
+
+    <string name="stop_convert">Stop at the end of conversion of the current title</string>
+
+    <string name="convert_aac" translatable="false">Advanced Audio Coding</string>
+    <string name="convert_mp3" translatable="false">MPEG-1/2 Audio Layer III</string>
+    <string name="convert_flac" translatable="false">Free Lossless Audio Codec</string>
+    <string name="convert_flac1" translatable="false">Max: 24bits</string>
+
+    <string name="convert_aac1" translatable="false">Max: 256k, 44.1kHz</string>
+    <string name="convert_mp31" translatable="false">Max: 256k, 44.1kHz</string>
+
+    <string name="convert_aac_hq" translatable="false">Max: 386k, 48kHz</string>
+    <string name="convert_mp3_hq" translatable="false">Max: 320k, 48kHz</string>
+
+    <string name="song_tag_comment">Comment</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_playlist_list"
+    tools:mContext="org.oucho.musicplayer.fragments.PlaylistListFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/barre_lecture"
+        tools:ignore="UselessParent">
+
+        <org.oucho.musicplayer.view.fastscroll.FastScrollRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bubbleColor="@color/noirTransparent"
+            app:bubbleTextColor="@color/colorAccent"
+            app:handleColor="@color/colorAccent"
+            app:hideScrollbar="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

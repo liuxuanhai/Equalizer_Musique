@@ -1,0 +1,3 @@
+-optimizations
+-optimizationpasses 5
+-allowaccessmodification

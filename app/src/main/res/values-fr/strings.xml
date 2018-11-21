@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="album">Album</string>
+
+    <string name="albums">Albums</string>
+
+    <string name="unknown_album">Album inconnu</string>
+
+    <string name="album_artwork">Couverture d\'album</string>
+
+    <string name="default_time">00:00</string>
+
+
+    <string name="titles">Titres</string>
+    <string name="title">Titre</string>
+
+    <string name="artists">Artistes</string>
+    <string name="unknown_artist">Artiste inconnu</string>
+    <string name="artist">Artiste</string>
+
+    <string name="genre">Genre</string>
+
+
+    <string name="play">Lecture</string>
+    <string name="prev">Précédent</string>
+    <string name="next">Suivant</string>
+
+    <string name="reorder">Réordonner</string>
+
+    <string name="custom">Personnalisé</string>
+    <string name="bass_boost">Amplificateur de basses</string>
+
+    <string name="playlists">Playlists</string>
+    <string name="choose_playlist">Choisir une playlist</string>
+    <string name="new_playlist">Nouvelle playlist</string>
+    <string name="playlist_name">Nom de la playlist</string>
+    <string name="create_playlist">Créer une playlist</string>
+    <string name="action_add_to_playlist">Ajouter à une playlist</string>
+
+    <string name="deletePlaylistConfirm">Supprimer cette playlist ?</string>
+
+
+    <string name="view_queue">Voir la liste de lecture</string>
+    <string name="action_add_to_queue">Ajouter à la liste de lecture</string>
+
+
+    <string name="context_menu_description">Menu contextuel</string>
+
+    <string name="equalizer">Égaliseur</string>
+    <string name="action_equalizer">Égaliseur</string>
+
+    <string name="search">Rechercher</string>
+    <string name="edit_tags">Edition des tags</string>
+    <string name="year">Année</string>
+
+    <string name="delete">supprimer</string>
+
+
+    <string name="permission">Permission</string>
+    <string name="permission_read_phone_state">Il est recommandé (mais pas nécessaire) de donner la permission
+        \"Effectuer et gérer des appels téléphoniques\" à l\'application,
+        cela permet au lecteur de se mettre en pause lorsque vous recevrez un appel.</string>
+
+    <string name="sort_order_entry_az">Ordre alphabétique</string>
+    <string name="sort_order_entry_year">Année</string>
+    <string name="sort_order_entry_artist">Artiste</string>
+    <string name="sort_order_entry_album">Album</string>
+
+
+    <string name="title_sort_year">année</string>
+    <string name="title_sort_artist">artiste</string>
+    <string name="title_sort_album">album</string>
+
+
+    <string name="about">A propos</string>
+
+    <string name="exit">Quitter</string>
+
+    <!-- Timer -->
+    <string name="timer_info" formatted="false" tools:ignore="StringFormatInvalid">%02d:%02d</string>
+    <string name="start">Démarrer</string>
+    <string name="cancel">Annuler</string>
+    <string name="continuer">Continuer</string>
+    <string name="cancel_timer">Annuler le timer</string>
+    <string name="impossible">0 impossible</string>
+
+
+    <string name="minute_singulier">minute</string>
+    <string name="minute_pluriel">minutes</string>
+
+    <string name="arret">Arrêt dans</string>
+
+    <string name="stop_timer">Timer arrêté</string>
+
+    <string name="action_sleep_timer">Minuteur sommeil</string>
+
+    <!-- update -->
+    <string name="update">Mise à jour</string>
+
+    <string name="appupdater_update_available">Nouvelle mise à jour disponible</string>
+
+    <string name="appupdater_update_available_description_dialog">La mise à jour %1$s est disponible. En téléchargeant cette version de l\'application, vous aurez accès aux dernières fonctionnalités et améliorations de %2$s.</string>
+    <string name="appupdater_update_available_description_dialog_before_release_notes">La mise à jour %1$s est disponible.\n\nNOUVEAUTÉS:\n%2$s</string>
+    <string name="appupdater_update_available_description_snackbar">Mise à jour %1$s disponible.</string>
+    <string name="appupdater_update_not_available">Aucune mise à jour disponible</string>
+    <string name="appupdater_update_not_available_description">Vous avez la dernière version disponible de %s.</string>
+    <string name="appupdater_btn_update">Télécharger</string>
+    <string name="appupdater_btn_dismiss">Plus tard</string>
+    <string name="sort_order_entry_latest_add">Dernier ajout</string>
+    <string name="title_sort_add">ajout</string>
+    <string name="action_radio">Radio</string>
+
+    <string name="title_activity_plop">Recherche</string>
+
+    <string name="no_result">aucun résultat</string>
+
+    <string name="action_play_album">Lecure</string>
+    <string name="tags_edition">Modification en cours</string>
+    <string name="permission_write_sd_externe">Sélectionner la carte SD externe pour autoriser l\'écriture, nécessaire depuis android 5.0 et plus.</string>
+    <string name="internal_storage">Stockage interne</string>
+    <string name="extrnal_storage">Stockage externe</string>
+
+    <string name="song_tag_track_number">Titre n°</string>
+    <string name="disc_number">Disque n°</string>
+
+    <string name="classical">Classique</string>
+    <string name="flat">Plat</string>
+
+
+    <string name="stockage_space">Espace insuffisant pour effectuer cette opération</string>
+
+    <string name="convert">Convertir</string>
+    <string name="converting">Conversion en cours</string>
+    <string name="convert_format">Convertir au format</string>
+
+
+    <string name="stop_convert">Arrêt dès la fin de conversion du titre en cours</string>
+    <string name="song_tag_comment">Commentaire</string>
+
+</resources>

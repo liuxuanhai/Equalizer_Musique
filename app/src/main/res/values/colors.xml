@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FFAB00</color><!--amber_A700-->
+
+    <color name="blue_900_trans">#980d47a1</color>
+    <color name="lime_700">#AFB42B</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+
+    <color name="red_500">#F44336</color>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="blancTransparent">#64ffffff</color>
+
+    <color name="noirTransparent">#a5000000</color>
+
+    <color name="colorBlurViewOverlay">#afffffff</color>
+
+</resources>

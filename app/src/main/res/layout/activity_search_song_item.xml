@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_single_line_item_height"
+    android:layout_centerVertical="true"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:background="@color/grey_200"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_more_vert_grey_400_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/menu_button">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/big_content_padding"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/grey_900"
+                    android:textSize="17sp"
+                    android:text="@string/title"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/big_content_padding"
+                    android:maxLines="1"
+                    android:text="@string/artist"
+                    android:textColor="@color/grey_600"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

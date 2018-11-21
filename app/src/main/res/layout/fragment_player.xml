@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/barre_lecture"
+    android:padding="0dp"
+    card_view:ignore="Overdraw">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent">
+
+        <android.support.v7.widget.CardView
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            card_view:elevation="1dp">
+
+            <ImageView
+                android:id="@+id/artwork"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:contentDescription="@string/album_artwork"
+                android:scaleType="centerCrop" />
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/grey_900"
+        android:textSize="17sp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/song_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/grey_600"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/current_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:text="@string/default_time"
+            android:textAlignment="center"
+            android:textColor="@color/grey_900"
+            android:textSize="15sp"
+            card_view:ignore="RelativeOverlap" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/track_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:text="@string/default_time"
+            android:textAlignment="center"
+            android:textColor="@color/grey_900"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/nombre_titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="1/4"
+            android:textColor="@color/grey_600"
+            android:textSize="17sp"
+            card_view:ignore="HardcodedText"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/bitrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="1kb/s"
+            android:textColor="@color/grey_600"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-light"
+            card_view:ignore="HardcodedText"
+            android:layout_weight="1" />
+
+</LinearLayout>
+

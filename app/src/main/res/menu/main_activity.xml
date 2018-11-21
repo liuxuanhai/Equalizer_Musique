@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_view_queue"
+        android:icon="@drawable/ic_queue_music_grey_600_24dp"
+        android:title="@string/view_queue"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_grey_600_24dp"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"
+        tools:ignore="PrivateResource" />
+
+</menu>

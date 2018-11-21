@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="activity_horizontal_margin">2dp</dimen>
+    <dimen name="activity_equalizer_margin">16dp</dimen>
+
+    <dimen name="dialogPadding">24dp</dimen>
+    <dimen name="content_padding">4dp</dimen>
+    <dimen name="big_content_padding">8dp</dimen>
+    <dimen name="small_content_padding">4dp</dimen>
+
+    <dimen name="fragment_playlist_item_height">50dp</dimen>
+    <dimen name="fragment_single_line_item_height">49dp</dimen>
+
+    <dimen name="notification_art_size">150dp</dimen>
+    <dimen name="fragment_album_art_size">150dp</dimen>
+    <dimen name="dialog_file_picker_art_size">25dp</dimen>
+    <dimen name="fragment_playlist_item_art_size">50dp</dimen>
+    <dimen name="fragment_song_list_item_art_size">76dp</dimen>
+    <dimen name="fragment_playlist_content_art_size">45dp</dimen>
+
+    <dimen name="fragment_album_list_item_margin">3dp</dimen>
+
+
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <dimen name="barre_lecture">60dp</dimen>
+
+    <dimen name="fastscroll_bubble_size">70dp</dimen>
+    <dimen name="fastscroll_handle_width">4dp</dimen>
+    <dimen name="fastscroll_handle_radius">2dp</dimen>
+    <dimen name="fastscroll_handle_height">60dp</dimen>
+    <dimen name="fastscroll_bubble_textsize">35sp</dimen>
+    <dimen name="fastscroll_scrollbar_padding">6dp</dimen>
+
+    <dimen name="toolbar_elevation">3dp</dimen>
+    <dimen name="playbar_elevation">5dp</dimen>
+    <dimen name="queue_layout_elevation">6dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- ChartView -->
+    <dimen name="axis_thickness">2dp</dimen>
+    <dimen name="axis_labels_spacing">5dp</dimen>
+    <dimen name="axis_border_spacing">0dp</dimen>
+    <dimen name="axis_top_spacing">0dp</dimen>
+
+    <dimen name="font_size">10dp</dimen>
+    <dimen name="grid_thickness">1dp</dimen>
+    <dimen name="dot_region_radius">18dp</dimen>
+
+</resources>

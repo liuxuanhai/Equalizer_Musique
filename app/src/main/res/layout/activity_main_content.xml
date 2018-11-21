@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/playbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/barre_lecture"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:elevation="@dimen/playbar_elevation">
+
+        <org.oucho.musicplayer.view.ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:padding="0dp"
+            app:progressColor="@color/colorAccent" />
+
+        <include layout="@layout/activity_main_content_a"
+            android:visibility="visible"/>
+
+        <include layout="@layout/activity_main_content_b"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <org.oucho.musicplayer.view.blurview.BlurView
+        android:id="@+id/queueBlurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/barre_lecture"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:elevation="@dimen/queue_layout_elevation"
+        android:outlineProvider="bounds"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/queue_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blancTransparent"
+            android:visibility="gone">
+
+            <org.oucho.musicplayer.view.DragRecyclerView
+                android:id="@+id/queue_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:handleColor="@color/colorAccent"/>
+
+        </FrameLayout>
+
+    </org.oucho.musicplayer.view.blurview.BlurView>
+
+</RelativeLayout>

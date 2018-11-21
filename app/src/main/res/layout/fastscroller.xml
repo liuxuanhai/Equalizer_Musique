@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/fastscroll_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:textSize="@dimen/fastscroll_bubble_textsize"
+        android:visibility="gone"
+        android:layout_marginEnd="50dp"
+        tools:background="@drawable/fastscroll_bubble"
+        tools:visibility="visible"
+        tools:textColor="#ffffff"
+        tools:text="A" />
+
+    <FrameLayout
+        android:id="@+id/fastscroll_scrollbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/fastscroll_scrollbar_padding"
+        android:paddingRight="@dimen/fastscroll_scrollbar_padding"
+        android:paddingStart="@dimen/fastscroll_scrollbar_padding"
+        android:paddingEnd="@dimen/fastscroll_scrollbar_padding"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/fastscroll_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:src="@drawable/fastscroll_handle"
+            tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+</merge>
