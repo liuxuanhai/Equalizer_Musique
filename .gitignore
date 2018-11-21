@@ -5,3 +5,4 @@ composer.phar
 .DS_Store
 /build
 *.iml
+/jaudiotagger-2.2.5-sources.jar
