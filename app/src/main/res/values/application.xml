@@ -4,7 +4,7 @@
 
     <string name="app_full_name" translatable="false">Music player for android</string>
 
-    <string name="by" tools:ignore="MissingTranslation" translatable="false">Old Geek, 2018</string>
+    <string name="by" tools:ignore="MissingTranslation" translatable="false">Old Geek, 2019</string>
 
     <string name="licence_info" translatable="false">
         Ce logiciel est destiné à ma famille et mes amis uniquement.\n
