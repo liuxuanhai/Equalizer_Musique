@@ -72,28 +72,28 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.oucho.musicplayer.dialog.SaveTagProgressDialog;
-import org.oucho.musicplayer.services.ConvertService;
-import org.oucho.musicplayer.services.PlayerService;
-import org.oucho.musicplayer.services.PlayerService.PlaybackBinder;
 import org.oucho.musicplayer.db.model.Song;
 import org.oucho.musicplayer.dialog.AboutDialog;
+import org.oucho.musicplayer.dialog.SaveTagProgressDialog;
 import org.oucho.musicplayer.fragments.BaseFragment;
 import org.oucho.musicplayer.fragments.LibraryFragment;
 import org.oucho.musicplayer.fragments.PlayerFragment;
 import org.oucho.musicplayer.fragments.adapters.QueueAdapter;
+import org.oucho.musicplayer.services.ConvertService;
+import org.oucho.musicplayer.services.PlayerService;
+import org.oucho.musicplayer.services.PlayerService.PlaybackBinder;
 import org.oucho.musicplayer.tools.CustomSwipe;
-import org.oucho.musicplayer.update.CheckUpdate;
 import org.oucho.musicplayer.utils.NavigationUtils;
-import org.oucho.musicplayer.view.Notification;
 import org.oucho.musicplayer.utils.PreferenceUtil;
 import org.oucho.musicplayer.utils.VolumeTimer;
 import org.oucho.musicplayer.view.CustomLayoutManager;
 import org.oucho.musicplayer.view.DragRecyclerView;
+import org.oucho.musicplayer.view.Notification;
 import org.oucho.musicplayer.view.ProgressBar;
 import org.oucho.musicplayer.view.SeekArc;
 import org.oucho.musicplayer.view.blurview.BlurView;
 import org.oucho.musicplayer.view.blurview.RenderScriptBlur;
+import org.oucho.radio2.update.UpdateChecker;
 
 import java.io.File;
 import java.util.List;
@@ -259,7 +259,7 @@ public class MainActivity extends AppCompatActivity implements
             showLibrary();
         }
 
-        CheckUpdate.onStart(this);
+        UpdateChecker.checkForSnack(this);
     }
 
 
@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity implements
                 break;
 
             case R.id.nav_update:
-                CheckUpdate.withInfo(this);
+                UpdateChecker.checkForDialog(this);
                 break;
 
             case R.id.nav_about:

@@ -40,6 +40,7 @@ import org.oucho.musicplayer.MusiqueKeys;
 import org.oucho.musicplayer.services.PlayerService;
 import org.oucho.musicplayer.R;
 import org.oucho.musicplayer.db.model.Album;
+import org.oucho.musicplayer.utils.SortArtistByYear;
 import org.oucho.musicplayer.view.fastscroll.FastScroller;
 
 import java.text.Normalizer;
@@ -72,7 +73,7 @@ public class AlbumListAdapter extends BaseAdapter<AlbumListAdapter.AlbumViewHold
         // Si tri par artiste trier par date en plus
         if ("REPLACE ('<BEGIN>' || artist, '<BEGIN>The ', '<BEGIN>')".equals(getTri)) {
 
-            Collections.sort(tri, new yearComparator());
+            Collections.sort(tri, new SortArtistByYear.compareYear());
         }
 
         mAlbumList = tri;
@@ -265,26 +266,6 @@ public class AlbumListAdapter extends BaseAdapter<AlbumListAdapter.AlbumViewHold
             triggerOnItemLongClickListener(position, v);
 
             return true;
-        }
-    }
-
-
-    public class yearComparator implements Comparator<Album> {
-
-        public int compare(Album left, Album right) {
-            int compare = 0;
-            final int leftYear = left.getYear();
-            final int rightYear = right.getYear();
-
-            if (left.getArtistName().equalsIgnoreCase(right.getArtistName())) {
-                if (leftYear < rightYear) {
-                    compare = -1;
-                } else if (leftYear > rightYear) {
-                    compare = 1;
-                }
-            }
-
-            return compare;
         }
     }
 

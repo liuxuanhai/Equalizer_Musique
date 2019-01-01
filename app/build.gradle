@@ -10,8 +10,8 @@ android {
         renderscriptSupportModeEnabled true
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 37
-        versionName "1.19.3"
+        versionCode 38
+        versionName "1.19.4"
         setProperty("archivesBaseName", "Musique_$versionName")
     }
 
